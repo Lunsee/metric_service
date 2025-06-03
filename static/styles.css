@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 300px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#metric-list {
+  list-style: disc inside;  /* маркеры внутри элемента */
+  padding-left: 0;           /* убираем дополнительные отступы у списка */
+}
+
+#metric-list li {
+  margin-bottom: 10px;      /* отступ между элементами */
+  display: flex;            /* делаем элемент flex-контейнером */
+  align-items: center;      /* выравниваем элементы по центру */
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between; /* распределяем текст и кнопку */
+  width: 100%;                      /* растягиваем на всю ширину контейнера */
+}
+
+.metric-item span {
+  flex-grow: 1; /* позволяет тексту занимать доступное пространство */
+}
+.embed-btn {
+    margin-left: 12px;
+}
+
+.statisticBtn{
+    margin-left: 12px;
+}
+
+.chart-wrapper {
+  width: 600px;  /* ширина графика */
+  height: 300px; /* высота графика */
+  margin-bottom: 30px;
+}
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Test Analytics</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        button { padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Тест страницы с метрикой</h1>
+    <button id="test-button">Нажми меня</button>
+
+     <form id="test-form">
+        <h3>Тестовая форма</h3>
+
+        <div class="form-row">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя">
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ваш email">
+        </div>
+
+        <div class="form-row">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+        </div>
+
+        <div class="form-row">
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" placeholder="Ваше сообщение"></textarea>
+        </div>
+
+        <div class="form-row">
+            <label for="source">Как вы о нас узнали?</label>
+            <select id="source" name="source">
+                <option value="">-- Выберите вариант --</option>
+                <option value="search">Поисковик (Google, Yandex)</option>
+                <option value="social">Социальные сети</option>
+                <option value="friend">Рекомендация друга</option>
+                <option value="other">Другое</option>
+            </select>
+        </div>
+
+        <button type="submit">Отправить форму</button>
+    </form>
+    <div style="height: 150vh; background: #eee; margin: 10px 0; padding: 20px;">
+        Блок 1 (150% высоты экрана)
+    </div>
+
+    <div style="height: 120vh; background: #ddd; margin: 10px 0; padding: 20px;">
+        Блок 2 (120% высоты экрана)
+    </div>
+
+
+    <div style="height: 200vh; background: #ccc; margin: 10px 0; padding: 20px;">
+        Блок 3 (200% высоты экрана)
+    </div>
+
+    <!-- Подключаем скрипт и передаём public_key -->
+    <script async src="http://localhost:8080/static/track.js" data-public-key="kp2NeEQ7J8iwjVc_6gJ1Cg"></script>
+</body>
+</html>

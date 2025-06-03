@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать, <span id="username">Загрузка...</span></h1>
+        <button id="logout">Выйти</button>
+    </header>
+
+    <section id="metrics">
+        <h2>Добавить новую метрику</h2>
+        <input type="text" id="website-url" placeholder="Введите URL сайта">
+        <button id="add-metric">Добавить метрику</button>
+    </section>
+
+    <section id="user-metrics">
+    <h2>Ваши метрики</h2>
+    <ul id="metric-list">
+        <li class="empty">Пока пусто...</li>
+    </ul>
+</section>
+
+   <section id="stats">
+    <h2>Статистика</h2>
+
+    <div id="metrics-tabs"></div> <!-- Кнопки метрик -->
+    <div id="metrics-charts">
+         <p>Это раздел статистики: нажмите кнопку показать статистику у нужной метрики</p>
+    </div> <!-- Контейнеры для графиков -->
+</section>
+
+<section id="integration">
+    <h2>Код для вставки</h2>
+    <p>Нажмите на нужной метрике кнопку "Получить код" и в этом блоке отобразится нужный код для вставки в вашу html страницу</p>
+    <p>Скопируйте этот код и вставьте перед  <code>&lt;/body&gt;</code> на вашем сайте:</p>
+    <pre><code id="embed-code"></code></pre>
+    <button id="copy-embed-btn">Скопировать код</button>
+</section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../../static/chart.min.js"></script>
+    <script type="module" src="../../static/dashboard.js"></script>
+    <script type="module" src="../../static/check_tokens.js"></script>
+</body>
+</html>
